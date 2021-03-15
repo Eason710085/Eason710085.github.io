@@ -20,7 +20,7 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>myfirstblog - Hexo</title>
+  <title>My First Blog - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -165,7 +165,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="myfirstblog">
+            <span class="h2" id="subtitle" title="My First Blog">
               
             </span>
 
@@ -180,7 +180,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      675 字
+      676 字
     </span>
   
 
@@ -220,20 +220,22 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">myfirstblog</h1>
+            <h1 style="display: none">My First Blog</h1>
             
             <div class="markdown-body">
               <span id="more"></span>
-<p>in this blog, i am gonna show some examples about pointers in c<br>Address in C<br>If you have a variable var in your program, &amp;var will give you its address in the memory.</p>
-<p>We have used address numerous times while using the scanf() function.</p>
+
+
+<p>In this blog, I am gonna show some examples about pointers in c.</p>
+<p><strong>Address in C</strong><br>If you have a variable var in your program, &amp;var will give you its address in the memory.<br>We have used address numerous times while using the scanf() function.</p>
 <figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lisp">scanf(<span class="hljs-string">&quot;%d&quot;</span>, <span class="hljs-symbol">&amp;var</span>)<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 <p>Here, the value entered by the user is stored in the address of var variable. Let’s take a working example.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>  <span class="hljs-keyword">int</span> var = <span class="hljs-number">5</span>;<br>  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;var: %d\n&quot;</span>, var);<br><br>  <span class="hljs-comment">// Notice the use of &amp; before var</span><br>  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;address of var: %p&quot;</span>, &amp;var);  <br>  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>Output</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-selector-tag">var</span>: <span class="hljs-number">5</span> <br><span class="hljs-selector-tag">address</span> of <span class="hljs-selector-tag">var</span>: <span class="hljs-number">2686778</span><br></code></pre></td></tr></table></figure>
 <p>Note: You will probably get a different address when you run the above code.</p>
-<p>C Pointers<br>Pointers (pointer variables) are special variables that are used to store addresses rather than values.</p>
-<p>Pointer Syntax<br>Here is how we can declare pointers.</p>
+<p><strong>C Pointers</strong><br>Pointers (pointer variables) are special variables that are used to store addresses rather than values.</p>
+<p><strong>Pointer Syntax</strong><br>Here is how we can declare pointers.</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">int* p<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 <p>Here, we have declared a pointer p of int type.</p>
 <p>You can also declare pointers in these ways.</p>
@@ -241,16 +243,16 @@
 <p>Let’s take another example of declaring pointers.</p>
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">int</span>* p<span class="hljs-number">1</span>, p<span class="hljs-number">2</span>;<br></code></pre></td></tr></table></figure>
 <p>Here, we have declared a pointer p1 and a normal variable p2.</p>
-<p>Assigning addresses to Pointers</p>
+<p><strong>Assigning addresses to Pointers</strong></p>
 <figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs llvm">int* pc<span class="hljs-punctuation">,</span> <span class="hljs-keyword">c</span><span class="hljs-comment">;</span><br><span class="hljs-keyword">c</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span><span class="hljs-comment">;</span><br>pc <span class="hljs-operator">=</span> &amp;<span class="hljs-keyword">c</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 <p>Here, 5 is assigned to the c variable. And, the address of c is assigned to the pc pointer.</p>
-<p>Get Value of Thing Pointed by Pointers<br>To get the value of the thing pointed by the pointers, we use the * operator. For example:</p>
+<p><strong>Get Value of Thing Pointed by Pointers</strong><br>To get the value of the thing pointed by the pointers, we use the * operator. For example:</p>
 <figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs llvm">int* pc<span class="hljs-punctuation">,</span> <span class="hljs-keyword">c</span><span class="hljs-comment">;</span><br><span class="hljs-keyword">c</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span><span class="hljs-comment">;</span><br>pc <span class="hljs-operator">=</span> &amp;<span class="hljs-keyword">c</span><span class="hljs-comment">;</span><br>printf(<span class="hljs-string">&quot;%d&quot;</span><span class="hljs-punctuation">,</span> *pc)<span class="hljs-comment">;   // Output: 5</span><br></code></pre></td></tr></table></figure>
 
 <p>Here, the address of c is assigned to the pc pointer. To get the value stored in that address, we used </p>
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs armasm">*<span class="hljs-built_in">pc</span>.<br></code></pre></td></tr></table></figure>
 
-<p>Note: In the above example, pc is a pointer, not *pc. You cannot and should not do something like *pc = &c;</p>
+<p>*Note: In the above example, pc is a pointer, not *pc. You cannot and should not do something like <em>pc = &c;</em></p>
 <p>By the way, * is called the dereference operator (when working with pointers). It operates on a pointer and gives the value stored in that pointer.</p>
 <p>Changing Value Pointed by Pointers</p>
 <figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs llvm">int* pc<span class="hljs-punctuation">,</span> <span class="hljs-keyword">c</span><span class="hljs-comment">;</span><br><span class="hljs-keyword">c</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span><span class="hljs-comment">;</span><br>pc <span class="hljs-operator">=</span> &amp;<span class="hljs-keyword">c</span><span class="hljs-comment">;</span><br><span class="hljs-keyword">c</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span><span class="hljs-comment">;</span><br>printf(<span class="hljs-string">&quot;%d&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-keyword">c</span>)<span class="hljs-comment">;    // Output: 1</span><br>printf(<span class="hljs-string">&quot;%d&quot;</span><span class="hljs-punctuation">,</span> *pc)<span class="hljs-comment">;  // Ouptut: 1</span><br></code></pre></td></tr></table></figure>
@@ -263,9 +265,9 @@
 
 <p>Initially, the address of c is assigned to the pc pointer using pc = &c;. Since c is 5, *pc gives us 5.</p>
 <p>Then, the address of d is assigned to the pc pointer using pc = &d;. Since d is -15, *pc gives us -15.</p>
-<p>Example: Working of Pointers</p>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs perl"><br><span class="hljs-comment">#include &lt;stdio.h&gt;</span><br><span class="hljs-keyword">int</span> main()<br>&#123;<br>   <span class="hljs-keyword">int</span>* pc, c;<br>   <br>   c = <span class="hljs-number">22</span>;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of c: %p\n&quot;</span>, &amp;c);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Value of c: %d\n\n&quot;</span>, c);  <span class="hljs-regexp">//</span> <span class="hljs-number">22</span><br>   <br>   pc = &amp;c;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of pointer pc: %p\n&quot;</span>, pc);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Content of pointer pc: %d\n\n&quot;</span>, *pc); <span class="hljs-regexp">//</span> <span class="hljs-number">22</span><br>   <br>   c = <span class="hljs-number">11</span>;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of pointer pc: %p\n&quot;</span>, pc);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Content of pointer pc: %d\n\n&quot;</span>, *pc); <span class="hljs-regexp">//</span> <span class="hljs-number">11</span><br>   <br>   *pc = <span class="hljs-number">2</span>;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of c: %p\n&quot;</span>, &amp;c);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Value of c: %d\n\n&quot;</span>, c); <span class="hljs-regexp">//</span> <span class="hljs-number">2</span><br>   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>Output</p>
+<p><strong>Example: Working of Pointers</strong></p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs perl"><span class="hljs-comment">#include &lt;stdio.h&gt;</span><br><span class="hljs-keyword">int</span> main()<br>&#123;<br>   <span class="hljs-keyword">int</span>* pc, c;<br>   <br>   c = <span class="hljs-number">22</span>;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of c: %p\n&quot;</span>, &amp;c);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Value of c: %d\n\n&quot;</span>, c);  <span class="hljs-regexp">//</span> <span class="hljs-number">22</span><br>   <br>   pc = &amp;c;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of pointer pc: %p\n&quot;</span>, pc);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Content of pointer pc: %d\n\n&quot;</span>, *pc); <span class="hljs-regexp">//</span> <span class="hljs-number">22</span><br>   <br>   c = <span class="hljs-number">11</span>;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of pointer pc: %p\n&quot;</span>, pc);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Content of pointer pc: %d\n\n&quot;</span>, *pc); <span class="hljs-regexp">//</span> <span class="hljs-number">11</span><br>   <br>   *pc = <span class="hljs-number">2</span>;<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Address of c: %p\n&quot;</span>, &amp;c);<br>   <span class="hljs-keyword">printf</span>(<span class="hljs-string">&quot;Value of c: %d\n\n&quot;</span>, c); <span class="hljs-regexp">//</span> <span class="hljs-number">2</span><br>   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p><strong>Output</strong></p>
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">Address</span> of c: <span class="hljs-number">2686784</span><br><span class="hljs-attribute">Value</span> of c: <span class="hljs-number">22</span><br><br><span class="hljs-attribute">Address</span> of pointer pc: <span class="hljs-number">2686784</span><br><span class="hljs-attribute">Content</span> of pointer pc: <span class="hljs-number">22</span><br><br><span class="hljs-attribute">Address</span> of pointer pc: <span class="hljs-number">2686784</span><br><span class="hljs-attribute">Content</span> of pointer pc: <span class="hljs-number">11</span><br><br><span class="hljs-attribute">Address</span> of c: <span class="hljs-number">2686784</span><br><span class="hljs-attribute">Value</span> of c: <span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
 
             </div>
