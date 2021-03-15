@@ -180,7 +180,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      647 字
+      654 字
     </span>
   
 
@@ -190,7 +190,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      12
+      13
        分钟
     </span>
   
@@ -223,11 +223,12 @@
             <h1 style="display: none">myfirstblog</h1>
             
             <div class="markdown-body">
-              <p>in this blog, i am gonna show some examples about pointers in c<br>Address in C<br>If you have a variable var in your program, &amp;var will give you its address in the memory.</p>
+              <span id="more"></span>
+<p>in this blog, i am gonna show some examples about pointers in c<br>Address in C<br>If you have a variable var in your program, &amp;var will give you its address in the memory.</p>
 <p>We have used address numerous times while using the scanf() function.</p>
 <p>scanf(“%d”, &amp;var);<br>Here, the value entered by the user is stored in the address of var variable. Let’s take a working example.</p>
-<p>#include &lt;stdio.h&gt;<br>int main()<br>{<br>  int var = 5;<br>  printf(“var: %d\n”, var);</p>
-<p>  // Notice the use of &amp; before var<br>  printf(“address of var: %p”, &amp;var);<br>  return 0;<br>}<br>Output</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>  <span class="hljs-keyword">int</span> var = <span class="hljs-number">5</span>;<br>  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;var: %d\n&quot;</span>, var);<br><br>  <span class="hljs-comment">// Notice the use of &amp; before var</span><br>  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;address of var: %p&quot;</span>, &amp;var);  <br>  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>Output</p>
 <p>var: 5<br>address of var: 2686778<br>Note: You will probably get a different address when you run the above code.</p>
 <p>C Pointers<br>Pointers (pointer variables) are special variables that are used to store addresses rather than values.</p>
 <p>Pointer Syntax<br>Here is how we can declare pointers.</p>
