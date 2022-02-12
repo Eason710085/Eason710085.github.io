@@ -277,7 +277,7 @@
     <link href="/2021/10/06/%E9%9A%8F%E7%AC%94/"/>
     <url>/2021/10/06/%E9%9A%8F%E7%AC%94/</url>
     
-    <content type="html"><![CDATA[<p>发现之前搭建的博客莫名其妙打不开了，索性全部删除重新来过。<br>这片文章主要用于记录一些markdown的使用教程。</p><hr><ol><li><h2 id="关于标题"><a href="#关于标题" class="headerlink" title="关于标题  "></a>关于标题  </h2><blockquote><p>一级标题&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;<br>二级标题——–  </p><blockquote><p>或者使用 #<br>#一级标题<br>##二级标题<br>###三级标题<br>####四级标题<br>#####五级标题<br>######六级标题  </p></blockquote></blockquote></li><li><h2 id="段落格式"><a href="#段落格式" class="headerlink" title="段落格式"></a>段落格式</h2><blockquote><p>段落的换行是使用两个以上空格加上回车<br>Markdown 可以使用以下几种字体: </p><blockquote><p><em>斜体文本</em>  (#)<br><strong>粗体文本</strong>  (##)<br><em><strong>粗斜体文本</strong></em>  (###)</p></blockquote></blockquote></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>发现之前搭建的博客莫名其妙打不开了，索性全部删除重新来过。<br>这片文章主要用于记录一些markdown的使用教程。</p><hr><h3 id="关于标题"><a href="#关于标题" class="headerlink" title="关于标题"></a>关于标题</h3><hr><blockquote><p>一级标题&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;<br>   二级标题——–  </p><blockquote><p>或者使用 #<br>   #一级标题<br>   ##二级标题<br>   ###三级标题<br>   ####四级标题<br>   #####五级标题<br>   ######六级标题  </p></blockquote></blockquote><h3 id="段落格式"><a href="#段落格式" class="headerlink" title="段落格式"></a>段落格式</h3><hr><blockquote><p>段落的换行是使用两个以上空格加上回车<br>   Markdown 可以使用以下几种字体: </p><blockquote><p><em>斜体文本</em>  (#)<br>   <strong>粗体文本</strong>  (##)<br>   <em><strong>粗斜体文本</strong></em>  (###)  </p></blockquote></blockquote><h3 id="置顶"><a href="#置顶" class="headerlink" title="置顶"></a>置顶</h3><blockquote><p>sticky: 1 </p></blockquote>]]></content>
     
     
     <categories>
