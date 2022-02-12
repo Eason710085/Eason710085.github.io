@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>nano实现代码高亮</title>
+    <link href="/2022/02/11/nano%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/"/>
+    <url>/2022/02/11/nano%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</url>
+    
+    <content type="html"><![CDATA[<h2 id="nano实现代码高亮"><a href="#nano实现代码高亮" class="headerlink" title="nano实现代码高亮"></a>nano实现代码高亮</h2><h3 id="更新nano"><a href="#更新nano" class="headerlink" title="更新nano"></a>更新nano</h3><p>vim命令太复杂了，暂时先用Mac自带的nano吧。</p><p>nano的版本模式是4.3 可以先升级一下</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">brew install nano<br>nano --version<br>GNU nano, version 6.1<br></code></pre></div></td></tr></table></figure><h3 id="高亮代码"><a href="#高亮代码" class="headerlink" title="高亮代码"></a>高亮代码</h3><p>Github网址:  <a href="https://github.com/scopatz/nanorc">nanorc</a></p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">git clone https://github.com/scopatz/nanorc.git $install_path<br><span class="hljs-meta">//$</span><span class="bash">install_path是你想安装的地址，最好为user目录下</span><br></code></pre></div></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">命令行执行<br>echo &quot;include $install_path/*.nanorc&quot; &gt;&gt; /etc/nanorc<br>cat $install_path/nanorc &gt;&gt; /etc/nanorc<br>//这段命令运行后出现：<br>//cat: $install_path : Is a directory<br>//没搞明白啥意思，运行再说吧<br></code></pre></div></td></tr></table></figure><p>然后打开nano配置文件：</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">sudo nano /etc/nanorc<br></code></pre></div></td></tr></table></figure><p>在文件里输入：</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">//*为所有代码格式都高亮<br>include &quot;~/.nano/*.nanorc&quot;<br></code></pre></div></td></tr></table></figure><p><img src="/images/img/p10.jpg" alt="预览图"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>nano</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Vim学习笔记</title>
     <link href="/2022/02/10/vim/"/>
     <url>/2022/02/10/vim/</url>
@@ -33,7 +58,7 @@
     <link href="/2022/02/09/%E5%AE%89%E8%A3%85ocaml/"/>
     <url>/2022/02/09/%E5%AE%89%E8%A3%85ocaml/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>(fun x -&gt; x * x ) 10 ;;</p></blockquote><p>#-&gt; Lx.x*x</p><blockquote><p>(L.x.x+2) 3 </p></blockquote><p>&#x3D;3 + 2 ……. [x-&gt;3] x + 2</p><p>&#x3D;5</p><blockquote><p>(Fun x -&gt; x + 2 ) + 3 </p><p>&#x3D;&gt;5</p></blockquote><blockquote><p>(Li.Lx.i+x) 3 10</p><p>&#x3D;(Lx.3+x)  10</p><p>&#x3D;13</p></blockquote><blockquote><p>Make_incr: (Li.Lx.i+x) </p><p>Incr_five: (Li.Lx.i+x)  5 –&gt; input 5</p><p>–&gt; Lx.5+x</p></blockquote><blockquote><p>List.fold_left f a [b1; b2;…];;</p><p>take the function and the var a, take b1as argument to compute the value</p><p>–&gt; then use the second value of the list as the second argument </p><p>f(f a b1) b2) b3</p><p>List.fold.left (fun x y -&gt; x + y ) 0 [1;2;3;4;5]</p><p>((()(0+1) + 2 ) +3 )+4)+5)</p><p>x + y  -&gt; 0 + 1 -&gt; (0+1) + 2 -&gt; ((0+1) +2) –&gt;.,,,,</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>真鸡巴服了，学Scheme, Prolog就算了。还要学Ocaml，Ocaml又是个啥牛马  </p><hr><p><a href="https://ocaml.org/">OCaml官网</a></p><h2 id="安装OCaml"><a href="#安装OCaml" class="headerlink" title="安装OCaml"></a>安装OCaml</h2><h3 id="For-Linux-and-macOS-only"><a href="#For-Linux-and-macOS-only" class="headerlink" title="For Linux and macOS only"></a>For Linux and macOS only</h3><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta">#</span><span class="bash"> Homebrew</span><br>brew install opam<br></code></pre></div></td></tr></table></figure><p>然后安装OCaml编译器</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta">#</span><span class="bash"> environment setup</span><br>opam init<br>eval `opam env`<br><span class="hljs-meta"></span><br><span class="hljs-meta">#</span><span class="bash"> install given version of the compiler</span><br>opam switch create 4.11.1<br>eval `opam env`<br></code></pre></div></td></tr></table></figure><p>然后OCaml就能够运行了，在终端输入：</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">which</span> ocaml</span><br>/Users/frank/.opam/4.11.1/bin/ocaml<br><span class="hljs-meta"></span><br><span class="hljs-meta">$</span><span class="bash"> ocaml -version</span><br>The OCaml toplevel, version 4.11.1<br></code></pre></div></td></tr></table></figure><p>这个B不能够设置默认环境</p><p>就是说每次想要在终端打开OCaml环境，都要输入：</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">eval `opam env`<br></code></pre></div></td></tr></table></figure><p>我试着把命令加入 .bash_profile文件中，没吊用，先这样吧。</p>]]></content>
     
     
     
