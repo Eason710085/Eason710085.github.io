@@ -295,11 +295,11 @@ sup > a::before,
 }
 html {
   font-size: 16px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 html,
 body {
-  font-family: var(--font-family-sans-serif);
+  font-family: Times, "Times New Roman", cursive;
 }
 html,
 body,
@@ -893,7 +893,7 @@ label {
 .markdown-body {
   font-size: 1rem;
   line-height: 1.6;
-  font-family: var(--font-family-sans-serif);
+  font-family: Times, "Times New Roman", cursive;
   margin-bottom: 2rem;
   color: var(--post-text-color);
 }
@@ -927,7 +927,7 @@ label {
   font-weight: bold;
 }
 .markdown-body pre {
-  font-size: 85% !important;
+  font-size: 80% !important;
 }
 .markdown-body pre code {
   overflow-x: auto;
