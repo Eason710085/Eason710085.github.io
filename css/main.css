@@ -360,18 +360,18 @@ img[lazyload] {
 }
 :root {
   --color-mode: 'light';
-  --body-bg-color: #000000;
-  --board-bg-color: #000000;
-  --text-color: #3c4858;
-  --sec-text-color: #718096;
-  --post-text-color: #2c3e50;
-  --post-heading-color: #1a202c;
-  --post-link-color: #0366d6;
-  --link-hover-color: #30a9de;
-  --link-hover-bg-color: #f8f9fa;
-  --navbar-bg-color: #000000;
-  --navbar-text-color: #fff;
-  --scrollbar-color: #c4c6c9;
+  --body-bg-color: #93b1c1;
+  --board-bg-color: #8fc9e8;
+  --text-color: #21130d;
+  --sec-text-color: #21130d;
+  --post-text-color: #21130d;
+  --post-heading-color: #21130d;
+  --post-link-color: #21130d;
+  --link-hover-color: #21130d;
+  --link-hover-bg-color: #21130d;
+  --navbar-bg-color: #93b1c1;
+  --navbar-text-color: #F9f9f9;
+  --scrollbar-color: #21130d;
   --scrollbar-hover-color: #a6a6a6;
 }
 @media (prefers-color-scheme: dark) {
@@ -1719,11 +1719,11 @@ post-custom {
   border-left: 0.35rem solid;
   border-radius: 0.25rem;
   margin: 1.5rem 0;
-  color: #3c4858;
+  color: #21130d;
   font-size: 0.9rem;
 }
 .note a {
-  color: #3c4858;
+  color: #21130d;
 }
 .note *:last-child {
   margin-bottom: 0;
@@ -1763,7 +1763,7 @@ note-default {
   font-size: 85%;
   margin: 0;
   padding: 0.2em 0.4em;
-  color: #3c4858;
+  color: #21130d;
 }
 .label-default {
   background: #f7f7f7;
