@@ -360,17 +360,17 @@ img[lazyload] {
 }
 :root {
   --color-mode: 'light';
-  --body-bg-color: #93b1c1;
-  --board-bg-color: #8fc9e8;
-  --text-color: #21130d;
-  --sec-text-color: #21130d;
-  --post-text-color: #21130d;
-  --post-heading-color: #21130d;
-  --post-link-color: #21130d;
-  --link-hover-color: #21130d;
-  --link-hover-bg-color: #21130d;
-  --navbar-bg-color: #93b1c1;
-  --navbar-text-color: #F9f9f9;
+  --body-bg-color: #000000;
+  --board-bg-color: #000000;
+  --text-color: #c4c6c9;
+  --sec-text-color: #a7a9ad;
+  --post-text-color: #c4c6c9;
+  --post-heading-color: #c4c6c9;
+  --post-link-color: #1589e9;
+  --link-hover-color: #30a9de;
+  --link-hover-bg-color: #364151;
+  --navbar-bg-color: #000000;
+  --navbar-text-color: #d0d0d0;
   --scrollbar-color: #21130d;
   --scrollbar-hover-color: #a6a6a6;
 }
@@ -1719,11 +1719,11 @@ post-custom {
   border-left: 0.35rem solid;
   border-radius: 0.25rem;
   margin: 1.5rem 0;
-  color: #21130d;
+  color: #c4c6c9;
   font-size: 0.9rem;
 }
 .note a {
-  color: #21130d;
+  color: #c4c6c9;
 }
 .note *:last-child {
   margin-bottom: 0;
@@ -1763,7 +1763,7 @@ note-default {
   font-size: 85%;
   margin: 0;
   padding: 0.2em 0.4em;
-  color: #21130d;
+  color: #c4c6c9;
 }
 .label-default {
   background: #f7f7f7;
