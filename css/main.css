@@ -360,18 +360,18 @@ img[lazyload] {
 }
 :root {
   --color-mode: 'light';
-  --body-bg-color: #eee;
-  --board-bg-color: #fff;
-  --text-color: #3c4858;
-  --sec-text-color: #718096;
-  --post-text-color: #2c3e50;
-  --post-heading-color: #1a202c;
-  --post-link-color: #0366d6;
+  --body-bg-color: #000000;
+  --board-bg-color: #000000;
+  --text-color: #c4c6c9;
+  --sec-text-color: #a7a9ad;
+  --post-text-color: #c4c6c9;
+  --post-heading-color: #c4c6c9;
+  --post-link-color: #1589e9;
   --link-hover-color: #30a9de;
-  --link-hover-bg-color: #f8f9fa;
-  --navbar-bg-color: #2f4154;
-  --navbar-text-color: #fff;
-  --scrollbar-color: #c4c6c9;
+  --link-hover-bg-color: #364151;
+  --navbar-bg-color: #000000;
+  --navbar-text-color: #d0d0d0;
+  --scrollbar-color: #21130d;
   --scrollbar-hover-color: #a6a6a6;
 }
 @media (prefers-color-scheme: dark) {
@@ -379,8 +379,8 @@ img[lazyload] {
     --color-mode: 'dark';
   }
   :root:not([data-user-color-scheme]) {
-    --body-bg-color: #181c27;
-    --board-bg-color: #252d38;
+    --body-bg-color: #000000;
+    --board-bg-color: #000000;
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
@@ -388,7 +388,7 @@ img[lazyload] {
     --post-link-color: #1589e9;
     --link-hover-color: #30a9de;
     --link-hover-bg-color: #364151;
-    --navbar-bg-color: #1f3144;
+    --navbar-bg-color: #000000;
     --navbar-text-color: #d0d0d0;
     --scrollbar-color: #687582;
     --scrollbar-hover-color: #9da8b3;
@@ -452,8 +452,8 @@ img[lazyload] {
   }
 }
 [data-user-color-scheme='dark'] {
-  --body-bg-color: #181c27;
-  --board-bg-color: #252d38;
+  --body-bg-color: #000000;
+  --board-bg-color: #000000;
   --text-color: #c4c6c9;
   --sec-text-color: #a7a9ad;
   --post-text-color: #c4c6c9;
@@ -461,7 +461,7 @@ img[lazyload] {
   --post-link-color: #1589e9;
   --link-hover-color: #30a9de;
   --link-hover-bg-color: #364151;
-  --navbar-bg-color: #1f3144;
+  --navbar-bg-color: #000000;
   --navbar-text-color: #d0d0d0;
   --scrollbar-color: #687582;
   --scrollbar-hover-color: #9da8b3;
@@ -1719,11 +1719,11 @@ post-custom {
   border-left: 0.35rem solid;
   border-radius: 0.25rem;
   margin: 1.5rem 0;
-  color: #3c4858;
+  color: #c4c6c9;
   font-size: 0.9rem;
 }
 .note a {
-  color: #3c4858;
+  color: #c4c6c9;
 }
 .note *:last-child {
   margin-bottom: 0;
@@ -1763,7 +1763,7 @@ note-default {
   font-size: 85%;
   margin: 0;
   padding: 0.2em 0.4em;
-  color: #3c4858;
+  color: #c4c6c9;
 }
 .label-default {
   background: #f7f7f7;
